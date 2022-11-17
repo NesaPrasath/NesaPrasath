@@ -1,0 +1,101 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 200vh;
+}
+.top
+{
+    background-color: #333;
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    height: 50vh;
+}
+.hed
+{
+    background-color: #f78799;
+    height: 60px;
+}
+.hed ul li{
+    background-color: #f78799;
+    height: 60px;
+    display: inline-block;
+    margin: 3px;
+    text-decoration: none;
+}
+a{
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    margin: 8px;
+    font-family: 'Poppins',sans-serif;
+    text-decoration-line: none;
+    line-height: 30px;
+}
+a:hover
+{
+    background: #69f3fd;
+    color: #333;
+    -webkit-text-stroke: .3px white;
+}
+.cont
+{
+    background: #333;
+    color: white;
+}
+h2,p{
+    margin: 5px;
+    padding: 7px;
+}
+section
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-size: 18em;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+section .sec{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+section .sec.leftside
+{
+    background: #74fe52;
+    clip-path: circle(200px at 0 0);
+}
+section .sec.rightside
+{
+    background: #69f3fd;
+    clip-path: circle(200px at 100% 100%);
+}
+.leftside h1
+{
+    color: transparent;
+    -webkit-text-stroke: 5px #333;
+}
+.rightside h1
+{
+    color: #333;
+    -webkit-text-stroke: 3px white;
+    -webkit-text-stroke-width: 5px;
+}

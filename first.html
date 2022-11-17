@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="first.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="top">
+        <div class="hed">
+            <nav style="float: right;">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">My blog</a>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cont">
+            <h2>LifeStyle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates 
+                fugiat voluptatibus dicta dolorum! Quos laboriosam ipsam architecto totam. Accusantium tempore maiores nihil unde repellendus obcaecati blanditiis a velit quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates 
+                fugiat voluptatibus dicta dolorum! Quos laboriosam ipsam architecto totam. Accusantium tempore maiores nihil unde repellendus obcaecati blanditiis a velit quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates 
+                fugiat voluptatibus dicta dolorum! Quos laboriosam ipsam architecto totam. Accusantium tempore maiores nihil unde repellendus obcaecati blanditiis a velit quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates 
+                fugiat voluptatibus dicta dolorum! Quos laboriosam ipsam architecto totam. Accusantium tempore maiores nihil unde repellendus obcaecati blanditiis a velit quisquam.
+            </p>
+            <h2>LifeStyle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates 
+                fugiat voluptatibus dicta dolorum! Quos laboriosam ipsam architecto totam. Accusantium tempore maiores nihil unde repellendus obcaecati blanditiis a velit quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates 
+                fugiat voluptatibus dicta dolorum! Quos laboriosam ipsam architecto totam. Accusantium tempore maiores nihil unde repellendus obcaecati blanditiis a velit quisquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates 
+                fugiat voluptatibus dicta dolorum! Quos laboriosam ipsam architecto totam. Accusantium tempore maiores nihil unde repellendus obcaecati blanditiis a velit quisquam.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="sec leftside">
+            <h1>image</h1>
+        </div>
+        <div class="sec rightside"> <h1>image</h1></div>
+        <div>
+            <h1>image</h1>
+        </div>
+        <script>
+            let ls=document.querySelector('.leftside');
+            let rs=document.querySelector('.rightside');
+            window.addEventListener('scroll',function()
+            {
+                let value=window.scrollY;
+                ls.style.clipPath=`circle(${value*1.15}px at 0 0)`;
+                rs.style.clipPath=`circle(${value*1.15}px at 100% 100%)`;
+            })
+        </script>
+    </section>
+</body>
+</html>
