@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    body{
+        text-align: center;
+        background-color: green;
+        margin: 0 500px 0 500px;
+    }
+    .form-lab
+    {
+      display: flex;
+      gap: 30px;
+    }
+    label
+    {
+      width: 100px;
+    }
+    
+   </style>
+</head>
+<body>
+    <form>
+                <div class="form-lab">
+                <h2>Step1: Your Details</h2>
+                </div>
+                <div class="form-lab">
+                   <label for="name">Name</label>
+                   <input type="text" placeholder="Fisrt and Last Name" id="name">
+                </div><br>
+                <div class="form-lab"> 
+                   <label for="email">Email</label>
+                   <input type="email" placeholder="example@gamil.com" id="email">
+                </div><br>
+                <div class="form-lab">   
+                   <label for="number">Phone</label>
+                   <input type="number" placeholder="Eg +91-0000000000" id="number">
+                </div><br>
+                <div class="form-lab">
+                   <h2>Step 2: Delivery Address</h2>
+                </div>
+                <div class="form-lab" style="gap: 15px;">
+                    <label for="Address" >Address</label> <br>  
+                    <textarea name="Address" id="Address" cols="21" rows="5"></textarea>
+                </div><br>
+                <div class="form-lab">
+                    <label for="code">Post Code</label>
+                    <input type="number" id="code">
+                </div><br>
+                <div class="form-lab">
+                    <label for="country">Country</label>
+                    <input type="text" id="country">
+                </div><br>
+                <div class="form-lab">
+                    <h2>Step 3: Card Details</h2>
+                </div>
+                <div class="form-lab">
+                    <label for="card">Card Number</label>
+                    <input type="number" id="card">
+                </div><br>
+                <div class="form-lab">
+                    <label for="code">Security code</label>
+                    <input type="number" id="code">
+                </div><br>
+                <div class="form-lab">
+                    <label for="name in card">Name in Card</label>
+                    <input type="text" id="name in card">
+                </div><br>
+                <div class="form-lab">
+                    <input type="submit" value="BUY IT!">
+                </div>
+    </form>
+</body>
+</html>
